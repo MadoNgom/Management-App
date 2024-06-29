@@ -1,0 +1,22 @@
+.sub-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 20px;
+}
+.sub-header a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.active {
+  border-top: 5px solid #6a1570;
+  transform: scale(1.1);
+  transition: border-top 0.3s ease, color 0.3s, ease, transform 0 ease;
+}

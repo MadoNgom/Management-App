@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center py-4">
+    <h4>Students Tables</h4>
+    <button class="btn btn-danger" (click)="toggleForm()">
+      Register Student
+    </button>
+  </div>
+  <form *ngIf="submitted">
+    <div class="d-flex mb-4">
+      <div class="form-group">
+        <input
+          type="text"
+          name="text"
+          class="form-control"
+          placeholder="identifiant "
+          [(ngModel)]="student.id"
+        />
+      </div>
+      <div class="form-group mx-3">
+        <input
+          type="text"
+          name="text"
+          class="form-control"
+          id="text"
+          placeholder="First Name "
+          [(ngModel)]="student.firstName"
+        />
+      </div>
+      <div class="form-group mx-3">
+        <input
+          type="text"
+          name="text"
+          class="form-control"
+          id="text"
+          placeholder="Last Name "
+          [(ngModel)]="student.lastName"
+        />
+      </div>
+      <div class="form-group mx-3">
+        <input
+          name="classe"
+          list="classes"
+          autofocus
+          class="form-control"
+          placeholder="select a classe"
+          [(ngModel)]="student.classe"
+        />
+        <datalist id="classes">
+          <option value="Terminal S2"></option>
+          <option value="Termila L2"></option>
+          <option value="Termila L1B"></option>
+          <option value="Termila STEG"></option>
+        </datalist>
+      </div>
+      <div class="form-group">
+        <input
+          type="checkbox"
+          name="checkbox"
+          [(ngModel)]="student.isRegistered"
+        />
+      </div>
+      <button
+        class="btn btn-success mx-3"
+        type="submit"
+        (click)="addStudent(student)"
+      >
+        Register
+      </button>
+    </div>
+  </form>
+
+  <table class="table table-centered mb-0">
+    <thead class="table-dark border-bottom-0">
+      <tr class="fs-6">
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Classe</th>
+        <th>IsRegistered</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of listeStudents">
+        <td>{{ student.id }}</td>
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.classe }}</td>
+        <td class="text-center">
+          <span
+            class="fs-6 text-light"
+            [ngClass]="student.isRegistered ? 'register' : 'notregister'"
+          >
+            {{ student.isRegistered ? "isregister" : "not register" }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

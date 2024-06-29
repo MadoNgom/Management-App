@@ -1,0 +1,37 @@
+<form (ngSubmit)="updateClasse()" class="form p-4">
+  <div class="d-flex justify-content-between align-items-center">
+    <h5>Modify classe info</h5>
+    <button class="btn btn-danger" routerLink="/">Back</button>
+  </div>
+  <div class="form-group">
+    <label>Class Name:</label> <br />
+    <input
+      type="text"
+      [(ngModel)]="classe.name"
+      name="name"
+      required
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <label>Teacher:</label>
+    <input
+      type="text"
+      [(ngModel)]="classe.teacher"
+      name="teacher"
+      required
+      class="form-control"
+    />
+  </div>
+  <div class="form-group mb-3">
+    <label>Number of Students:</label>
+    <input
+      type="number"
+      [(ngModel)]="classe.numberOfStudents"
+      name="numberOfStudents"
+      required
+      class="form-control"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Modify</button>
+</form>

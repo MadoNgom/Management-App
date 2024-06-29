@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.dashb-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+.header {
+  background-color: #ffff;
+  grid-area: header;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content {
+  grid-area: main;
+}
+
+/* #141446; */

@@ -1,0 +1,97 @@
+{
+  "classes": [
+    {
+      "id": "1",
+      "name": "Terminal S1",
+      "teacher": "Mr Djigo",
+      "numberOfStudents": 11
+    },
+    {
+      "id": "2",
+      "name": "Terminal S2",
+      "teacher": "Mr Diop",
+      "numberOfStudents": 43
+    },
+    {
+      "id": 3,
+      "name": "Terminal L2",
+      "teacher": "Mrs Fall",
+      "numberOfStudents": 50
+    },
+    {
+      "id": 5,
+      "name": "Terminal STEG A",
+      "teacher": "Mr Ndour",
+      "numberOfStudents": 60
+    },
+    {
+      "id": 8,
+      "name": "Terminal S2",
+      "teacher": "Mr Ly",
+      "numberOfStudents": 45
+    },
+    {
+      "id": 10,
+      "name": "Second S1",
+      "teacher": "Mr Ndiaye",
+      "numberOfStudents": 23
+    },
+    {
+      "id": 11,
+      "name": "Terminal L2",
+      "teacher": "Mr faye",
+      "numberOfStudents": 29
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "firstName": "Penda Sarr",
+      "lastName": "Diop",
+      "classe": "Terminal L2",
+      "isRegistered": true
+    },
+    {
+      "id": "2",
+      "firstName": "Aida ",
+      "lastName": "Ngom",
+      "classe": "Terminal S2",
+      "isRegistered": true
+    },
+    {
+      "id": "3",
+      "firstName": "Malado",
+      "lastName": "Ngom",
+      "classe": "Terminal S1",
+      "isRegistered": false
+    },
+    {
+      "id": "4",
+      "firstName": "Ablaye",
+      "lastName": "Gueye",
+      "classe": "Terminal STEGA",
+      "isRegistered": true
+    },
+    {
+      "id": "5",
+      "firstName": "Dramane",
+      "lastName": "Bamba",
+      "classe": "Terminal T2",
+      "isRegistered": false
+    },
+    {
+      "id": "13",
+      "firstName": "Astou",
+      "lastName": "Wade",
+      "classe": "Termila L1B",
+      "isRegistered": true
+    },
+    {
+      "id": "7",
+      "firstName": "Nogaye",
+      "lastName": "Faye",
+      "classe": "Termila L2",
+      "isRegistered": true
+    }
+  ]
+}

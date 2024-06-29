@@ -1,0 +1,30 @@
+<main>
+  <div class="container py-3">
+    <app-add-classe (addClasse)="addClasse($event)"></app-add-classe>
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Classe Name</th>
+            <th>Teacher</th>
+            <th class="text-center">Number Of students</th>
+            <th>Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let classe of listeClasse">
+            <td>{{ classe.id }}</td>
+            <td>{{ classe.name }}</td>
+            <td>{{ classe.teacher }}</td>
+            <td style="text-align: center">{{ classe.numberOfStudents }}</td>
+            <td class="flex">
+              <div class="edit" [routerLink]="['/edit', classe.id]">Edit</div>
+              <div class="delete" (click)="deleteClasse(classe)">Delete</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>

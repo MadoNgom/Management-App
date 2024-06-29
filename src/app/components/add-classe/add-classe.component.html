@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-between align-items-center">
+  <app-nav></app-nav>
+  <div>
+    <button class="btn btn-danger" (click)="toggleForm()">Add</button>
+  </div>
+</div>
+
+<form *ngIf="submitted">
+  <div class="d-flex mb-4">
+    <div class="form-group">
+      <input
+        type="number"
+        name="number"
+        class="form-control"
+        placeholder="identifiant "
+        [(ngModel)]="classe.id"
+      />
+    </div>
+    <div class="form-group mx-3">
+      <input
+        type="text"
+        name="text"
+        class="form-control"
+        id="text"
+        placeholder="classe Name "
+        [(ngModel)]="classe.name"
+      />
+    </div>
+    <div class="form-group mx-3">
+      <input
+        type="text"
+        name="text"
+        class="form-control"
+        id="text"
+        placeholder="Add Teacher "
+        [(ngModel)]="classe.teacher"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="number"
+        name="numberOfStudents"
+        placeholder="numberOfStudents"
+        [(ngModel)]="classe.numberOfStudents"
+        class="form-control"
+      />
+    </div>
+    <button class="btn btn-success mx-3" (click)="saveData()">Save</button>
+  </div>
+</form>

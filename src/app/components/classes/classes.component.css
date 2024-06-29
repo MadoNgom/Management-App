@@ -1,0 +1,35 @@
+.table {
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.table thead tr {
+  text-align: left;
+  border-radius: 15px;
+}
+
+.table th,
+.table tr {
+  padding: 10px;
+}
+.table tbody tr {
+  border-bottom: 2px solid #dddd;
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.edit {
+  color: green;
+}
+.delete {
+  color: red;
+}

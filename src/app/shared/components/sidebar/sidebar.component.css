@@ -1,0 +1,60 @@
+.aside {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #4a154b;
+
+  min-height: 100vh;
+  overflow: hidden;
+  transform: all 0.4s linear;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.aside_list {
+  list-style-type: none;
+  padding: 1rem;
+  margin-top: 40px;
+  height: 80vh;
+}
+.aside_list .aside-active {
+  background-color: #f2606a;
+}
+.aside_item {
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: all 0.5s ease-in-out;
+  .aside-active {
+    background-color: #4a154b;
+  }
+}
+.aside_link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+.aside_link:hover {
+  color: #ffb6bd;
+}
+span {
+  overflow: hidden;
+}
+fa-icon {
+  font-size: 1.4rem;
+}
+.aside--logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
