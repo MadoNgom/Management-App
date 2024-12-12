@@ -5,7 +5,7 @@ Mr. Demba Sarr, the director of the school, has called upon a software developer
 
 To facilitate enrollment in his school, he would also like to have a part in the application where he can add students and put them in a specific class. For example. He can register his daughter Penda Sarr in Terminal s2.
 
-## install all package after cloing this repository
+## install all package after cloning this repository
 
 By Running `npm install` to install all packages
 
